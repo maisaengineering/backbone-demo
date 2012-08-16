@@ -4,7 +4,8 @@ window.BackboneExample = {
   Views: {},
   Routers: {},
   init: function() {
-    alert('Hello from Backbone!');
+    new BackboneExample.Routers.Posts();
+    Backbone.history.start();
   }
 };
 
